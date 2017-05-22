@@ -1,0 +1,548 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900')
+$mainbgrcolor: #313332
+$mainFontcolor: #fff
+$color2:  #01cee1
+$font2: 'Raleway', sans-serif
+$mainfont: 'Open Sans', sans-serif
+$border: 1px solid #fff
+=margin-auto
+	-margin-left: auto
+	-margin-right: auto
+body 
+	margin: 0 auto
+	font-family: $mainfont
+
+.row:before, 
+.row:after 
+	content: ""
+	display: table
+	clear: both
+.container 
+	max-width: 1600px
+	margin: 0 auto
+
+header 
+	background-color: $mainbgrcolor
+	padding: 1%
+	max-width: 100%
+	nav
+		img 
+			padding: 10px 0
+		ul
+			margin: 0
+			padding: 0
+			list-style-type: none
+			float: right
+			li 
+				display: inline-block
+			a 
+				line-height: 50px
+				padding: 0 20px
+				display: block
+				color: $mainFontcolor
+				font-weight: bold
+				text-decoration: none
+				text-transform: uppercase
+				&:hover 
+					color: $color2
+		
+input[type="checkbox"] + label 
+	font-size: 25px
+	cursor: pointer
+	color: $mainFontcolor
+
+input, label 
+	display: none
+.hero 
+	background-image: url(https://images.pexels.com/photos/38892/pexels-photo-38892.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)
+	max-height: 60vh
+	margin: 0 auto
+	background-size: cover
+	background-position: center
+	background-repeat: no-repeat
+	position: relative
+	overflow: hidden
+	.slogan 
+		background-color: rgba(0, 0, 0, 0.5)
+		float: right
+		margin-top: 7%
+		margin-bottom: 20%
+		max-width: 60%
+	h1 
+		margin-right: 250px
+		margin-left: 100px
+		color: rgba(255,255,255, 0.7)
+		font-size: 30px
+		text-align: left
+		line-height: 32px
+	.p1-a 
+		font-weight: bold
+		color: $mainFontcolor
+.col-1 
+	width: 8.33%
+.col-2 
+	width: 16.66%
+.col-3 
+	width: 25%
+.col-4 
+	width: 33.33%
+.col-5 
+	width: 41.66%
+.col-6 
+	width: 50%
+.col-7 
+	width: 58.33%
+.col-8 
+	width: 66.66%
+.col-9 
+	width: 75%
+.col-10 
+	width: 83.33%
+.col-11 
+	width: 91.66%
+.col-12 
+	width: 100%
+[class*="col-"] 
+	Float: left
+	min-height: 1px
+	text-align: center
+	margin: 0
+	position: relative
+
+.benefit-row 
+	margin: 50px auto
+	.item 
+		box-sizing: border-box
+		float: left
+		min-height: 1px
+		margin: auto
+		text-align: center
+		padding: 1%
+		&:hover 
+			.icon-btn
+				background-color: $color2
+				cursor: pointer
+				transition: ease-in-out .3s
+		&:hover 
+			h2 
+				color: $color2
+				cursor: pointer	 	
+		.icon-btn 
+			height: 100px
+			width: 100px
+			border-width: 0
+			border-radius: 15%
+			margin: 0
+			font-size: 50px
+			line-height: 100px
+			text-align: center
+			color: $mainFontcolor
+			background-color: $mainbgrcolor
+		h2 
+			color: $mainbgrcolor
+			font-size: 4vh
+		p 
+			color: rgba(0,0,0, 0.6)
+			font-size: 3vh
+.header2 
+	.col-12 
+		text-align: center
+		margin: 3% auto
+	h3 
+		color: $mainbgrcolor
+		font-size: 7vh
+		font-family: $font2
+		font-weight: 900
+	p 
+		color: rgba(0, 0, 0, 0.6)
+		font-size: 3.4vh
+		margin-left: 20%
+		margin-right: 20%
+		text-align: center	
+
+.gallery 
+	max-height: 60vh
+	img 
+		width: 100%
+		height: 30vh
+		display: block
+		object-fit: cover
+	.layer 
+		position: absolute
+		line-height: 30vh
+		width: 100%
+		display: block
+		margin: 0
+		opacity: 0
+		&:hover 
+			opacity: 1
+			background-color: rgba(0, 0, 0, 0.5)
+	i 
+		width: 30px
+		height: 30px
+		font-size: 20px
+		background-color: $mainFontcolor
+		line-height: 30px
+		text-align: center
+		border-radius: 15%
+
+.team 
+	max-width: 80%
+	height: 55vh
+	margin: 4% auto
+	img 
+		border-radius: 50%
+		text-align: center
+		margin-top: 10%
+	p 
+		color: #5e5e5c
+		text-align: center
+		margin: 1% auto
+		font-size: 18px
+		font-weight: bold
+	.position 
+		position: absolute
+		width: 200px
+		line-height: 200px
+		display: block
+		margin-left: 13%
+		margin-top: 10%
+		color: #5e5e5c
+		text-align: center
+		font-size: 18px
+		border-radius: 50%
+		opacity: 0
+		&:hover 
+			background-color: rgba(0, 0, 0, 0.5)
+			opacity: 1
+			color: $mainFontcolor
+			font-weight: bold
+
+.banner2 
+	background-color: #838584
+	height: 60vh
+	max-width: 100%
+	img 
+		height: 57vh
+		max-width: 60%
+		margin-top: 3.5%
+		border-radius: 8px
+		margin-left: 25%
+		object-fit: cover
+	h2 
+		font-family: $font2
+		text-transform: uppercase
+		text-align: left
+		font-size: 30px
+		margin-left: 4%
+		margin-top: 6%
+	p 
+		text-align: left
+		column-count: 2
+		column-gap: 4%
+		max-width: 75%
+		margin-left: 4%
+		margin-top: 2%
+
+.statistic 
+	+margin-auto
+	height: 14vh
+	width: 70%
+	margin-top: 3%
+	margin-bottom: 8%
+	h1
+		+margin-auto
+		font-size: 50px
+		font-family: $font2
+		margin-bottom: 1%
+		text-align: center
+		color: #323433
+		font-weight: 900
+	p 
+		text-transform: uppercase
+		color: #09c2ee		
+		text-align: center
+		font-size: 17px
+		margin-top: 10%
+		font-family: $font2
+		font-weight: 700
+.foot-up 
+	background-color: $mainbgrcolor
+	height: 45vh
+	font-family: $font2
+	color: $mainFontcolor
+	max-width: 100%
+	h1 
+		text-transform: uppercase
+		font-size: 20px
+		font-weight: 900
+		width: 60%
+		margin-top: 5%
+		&:after 
+			content: ""
+			display: inline-block
+			background: white
+			width: 80px
+			height: 2px
+			margin: 5px
+			margin-left: 10px
+		
+	p 
+		font-family: $font2
+		font-weight: 400
+		text-align: left
+
+			
+	.about
+		h1 
+			margin-left: auto
+			margin-right: auto
+			text-align: left
+			width: 80
+		p 
+			width: 80%
+			margin-left: auto
+			margin-right: auto
+			margin-top: 0
+			font-size: 15px
+	.intouch 
+		.row 
+			display: inline-block
+			
+		h1 
+			margin-left: auto
+			margin-right: auto
+			text-align: left
+			width: 80%
+		p 
+			width: 85%
+			margin-left: auto
+			margin-right: auto
+			margin-top: 0
+			font-size: 15px
+	.social
+		h1 
+			margin-right: auto
+			margin-left: auto
+			text-align: left
+			width: 80%
+		p 
+			width: 70%
+			margin-top: 4%
+			margin-right: 60%
+			text-align: left
+			font-size: 15px
+			margin-left: 10%
+		.media 
+			margin-right: 38%
+			i 
+				background-color: #00c7e8
+				color: $mainFontcolor
+				font-size: 18px
+				text-align: center
+				width: 22px
+				height: 22px
+				padding: 3px
+				margin-top: 3px
+				cursor: pointer
+
+.footer 
+	.col-12 
+		background-color: #252726
+		height: 20%
+		p 
+			text-align: center
+			font-family: $mainfont
+			font-size: 17px
+			color: $mainFontcolor
+			line-height: 22px
+
+@media(min-width: 768px) and (max-width: 1199px), (max-width: 768px) 
+	.slogan 
+		h1 
+			text-align: right
+			margin-left: 20%
+			margin-right: 7%
+	.gallery
+		.layer
+			display: none
+			&:hover 
+				opacity: 0
+				background-color: rgba(0, 0, 0, 0)
+	
+	.position 
+		display: none
+		&:hover 
+			display: none
+	
+	.footer 
+		display: inline-block
+		margin-top: 10%
+		max-width: 100%
+		height: 50%
+				
+		
+@media(min-width: 768px) and (max-width: 1199px)
+
+	.col-m-1 
+		width: 8.33%
+	.col-m-2 
+		width: 16.66%
+	.col-m-3 
+		width: 25%
+	.col-m-4 
+		width: 33.33%
+	.col-m-5 
+		width: 41.66%
+	.col-m-6 
+		width: 50%
+	.col-m-7 
+		width: 58.33%
+	.col-m-8 
+		width: 66.66%
+	.col-m-9 
+		width: 75%
+	.col-m-10 
+		width: 83.33%
+	.col-m-11 
+		width: 91.66%
+	.col-m-12 
+		width: 100%
+	.benefit-row 
+		p 
+			max-width: 80%
+			margin: 5% auto
+	.banner2 
+		display: inline-block
+		margin-top: 10%
+		max-width: 100%
+		img 
+			max-width: 90%
+			height: 50vh
+			margin-top: 13%
+			margin-bottom: 0
+			margin-left: auto
+			margin-right: auto
+		h2 
+			font-size: 5vh
+		p 
+			column-count: 1
+			max-width: 90%
+			text-align: justify
+			font-size: 3.2vh
+			margin-bottom: 3%
+
+	.about, .intouch, .social
+		max-width: 100%
+		height: 45vh
+		border-bottom: $border
+		background-color: $mainbgrcolor
+	.media 
+		text-align: left
+		margin-left: 10%
+
+@media(max-width: 768px)
+	
+	.col-s-1 
+		width: 8.33%
+	.col-s-2 
+		width: 16.66%
+	.col-s-3 
+		width: 25%
+	.col-s-4 
+		width: 33.33%
+	.col-s-5 
+		width: 41.66%
+	.col-s-6 
+		width: 50%
+	.col-s-7 
+		width: 58.33%
+	.col-s-8 
+		width: 66.66%
+	.col-s-9 
+		width: 75%
+	.col-s-10 
+		width: 83.33%
+	.col-s-11 
+		width: 91.66%
+	.col-s-12 
+		width: 100%
+	
+	nav 
+		text-align: right
+		img 
+			display: block
+			float: left
+		li 
+			margin-bottom: 2%
+			max-width: 100%
+			display: block
+			border-bottom: $border
+	label 
+		display: block
+	
+	#menu-button:not(:checked) ~ul 
+		display: none
+	
+	#menu-button:checked ~ ul 
+		display: block
+	.benefit-row 
+		h2 
+			font-size: 3vh
+			max-width: 100%
+			display: block	
+		p 
+			width: 100%
+			margin-top: 0
+			margin-bottom: 5%
+			text-align: justify
+			font-size: 3vh
+		
+	.banner2 
+		display: inline-block
+		margin-top: 10%
+		max-width: 100%
+		height: 50%
+		img 
+			opacity: 0
+		.foto 
+			background-image: url(https://images.pexels.com/photos/226664/pexels-photo-226664.jpeg?h=350&auto=compress&cs=tinysrgb)
+			height: 20vh
+			background-position: center
+		h2 
+			font-size: 3.5vh
+		p 
+			column-count: 1
+			max-width: 95%
+		
+			text-align: justify
+			margin-right: 5%
+	
+	.about, .intouch, .social 
+		max-width: 100%
+		display: block
+		border-bottom: $border
+		background-color: $mainbgrcolor
+	
+	.about 
+		p 
+			width: 90%
+			margin-left: 10%
+			margin-bottom: 5%
+	.intouch 
+		h1 
+			margin-left: 10%
+		p 
+			width: 90%
+			margin-left: 4%
+			margin-bottom: 5%
+	
+	.media 
+		width: 100%
+		margin-bottom: 5%
+	
+	.foot-up
+		h1
+			&:after 
+				display: none
+	
