@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900')
-$mainbgrcolor: #313332
-$mainFontcolor: #fff
-$color2:  #01cee1
+$mainbgrcolor: #313332 /*darker grey*/
+$mainFontcolor: #fff /*white*/
+$color2: #09c2ee /*light blue*/
+$color3: #5e5e5c /*grey*/
+$color4: #838584 /*light grey*/
+$color5: #252726 /*very dark grey */
 $font2: 'Raleway', sans-serif
 $mainfont: 'Open Sans', sans-serif
 $border: 1px solid #fff
@@ -11,6 +14,7 @@ $border: 1px solid #fff
 body 
 	margin: 0 auto
 	font-family: $mainfont
+	max-width: 1600px
 
 .row:before, 
 .row:after 
@@ -45,8 +49,8 @@ header
 				text-transform: uppercase
 				&:hover 
 					color: $color2
-		
-input[type="checkbox"] + label 
+
+label 
 	font-size: 25px
 	cursor: pointer
 	color: $mainFontcolor
@@ -56,12 +60,10 @@ input, label
 .hero 
 	background-image: url(https://images.pexels.com/photos/38892/pexels-photo-38892.jpeg?w=940&h=650&auto=compress&cs=tinysrgb)
 	max-height: 60vh
-	margin: 0 auto
 	background-size: cover
 	background-position: center
 	background-repeat: no-repeat
-	position: relative
-	overflow: hidden
+	
 	.slogan 
 		background-color: rgba(0, 0, 0, 0.5)
 		float: right
@@ -110,14 +112,10 @@ input, label
 	position: relative
 
 .benefit-row 
-	margin: 50px auto
+	margin: 10% auto 5%
+	max-width: 90%
 	.item 
 		box-sizing: border-box
-		float: left
-		min-height: 1px
-		margin: auto
-		text-align: center
-		padding: 1%
 		&:hover 
 			.icon-btn
 				background-color: $color2
@@ -132,10 +130,7 @@ input, label
 			width: 100px
 			border-width: 0
 			border-radius: 15%
-			margin: 0
 			font-size: 50px
-			line-height: 100px
-			text-align: center
 			color: $mainFontcolor
 			background-color: $mainbgrcolor
 		h2 
@@ -147,7 +142,7 @@ input, label
 .header2 
 	.col-12 
 		text-align: center
-		margin: 3% auto
+		margin: 0 auto 5%
 	h3 
 		color: $mainbgrcolor
 		font-size: 7vh
@@ -156,9 +151,7 @@ input, label
 	p 
 		color: rgba(0, 0, 0, 0.6)
 		font-size: 3.4vh
-		margin-left: 20%
-		margin-right: 20%
-		text-align: center	
+		margin: 0 20%
 
 .gallery 
 	max-height: 60vh
@@ -172,7 +165,6 @@ input, label
 		line-height: 30vh
 		width: 100%
 		display: block
-		margin: 0
 		opacity: 0
 		&:hover 
 			opacity: 1
@@ -183,7 +175,6 @@ input, label
 		font-size: 20px
 		background-color: $mainFontcolor
 		line-height: 30px
-		text-align: center
 		border-radius: 15%
 
 .team 
@@ -192,10 +183,9 @@ input, label
 	margin: 4% auto
 	img 
 		border-radius: 50%
-		text-align: center
-		margin-top: 10%
+		margin: 10% 0 0
 	p 
-		color: #5e5e5c
+		color: $color3
 		text-align: center
 		margin: 1% auto
 		font-size: 18px
@@ -207,8 +197,7 @@ input, label
 		display: block
 		margin-left: 13%
 		margin-top: 10%
-		color: #5e5e5c
-		text-align: center
+		color: $color3
 		font-size: 18px
 		border-radius: 50%
 		opacity: 0
@@ -219,7 +208,7 @@ input, label
 			font-weight: bold
 
 .banner2 
-	background-color: #838584
+	background-color: $color4
 	height: 60vh
 	max-width: 100%
 	img 
@@ -245,23 +234,19 @@ input, label
 		margin-top: 2%
 
 .statistic 
-	+margin-auto
 	height: 14vh
 	width: 70%
-	margin-top: 3%
-	margin-bottom: 8%
+	margin: 3% auto 8%
+	
 	h1
-		+margin-auto
+		margin: 10% auto
 		font-size: 50px
 		font-family: $font2
-		margin-bottom: 1%
-		text-align: center
-		color: #323433
+		color: $mainbgrcolor
 		font-weight: 900
 	p 
 		text-transform: uppercase
-		color: #09c2ee		
-		text-align: center
+		color: $color2
 		font-size: 17px
 		margin-top: 10%
 		font-family: $font2
@@ -276,86 +261,73 @@ input, label
 		text-transform: uppercase
 		font-size: 20px
 		font-weight: 900
-		width: 60%
-		margin-top: 5%
+		margin: 5%	
+		text-align: left
 		&:after 
 			content: ""
 			display: inline-block
 			background: white
 			width: 80px
 			height: 2px
-			margin: 5px
-			margin-left: 10px
+			margin: 5px 5px 5px 10px
+			
 		
 	p 
 		font-family: $font2
 		font-weight: 400
 		text-align: left
-
+		font-size: 15px
 			
 	.about
-		h1 
-			margin-left: auto
-			margin-right: auto
-			text-align: left
-			width: 80
+		h1
+			margin-left: 10%
 		p 
 			width: 80%
-			margin-left: auto
-			margin-right: auto
-			margin-top: 0
-			font-size: 15px
+			margin: 0 auto 3%
+			
 	.intouch 
+		h1
+			margin-left: 9%
+			
 		.row 
 			display: inline-block
+			margin: 0 auto 5%
+			.left
+				p
+					margin: 0 auto 13%	
+			.right
+				p
+					margin: 0 auto 5%
+					line-height: 20px
 			
-		h1 
-			margin-left: auto
-			margin-right: auto
-			text-align: left
-			width: 80%
-		p 
-			width: 85%
-			margin-left: auto
-			margin-right: auto
-			margin-top: 0
-			font-size: 15px
 	.social
 		h1 
-			margin-right: auto
-			margin-left: auto
-			text-align: left
+			margin: 5% auto
 			width: 80%
 		p 
 			width: 70%
 			margin-top: 4%
-			margin-right: 60%
-			text-align: left
-			font-size: 15px
 			margin-left: 10%
 		.media 
-			margin-right: 38%
+			margin-right: 36%
 			i 
-				background-color: #00c7e8
+				background-color: $color2
 				color: $mainFontcolor
 				font-size: 18px
-				text-align: center
-				width: 22px
-				height: 22px
-				padding: 3px
-				margin-top: 3px
+				line-height: 30px
+				width: 30px
+				height: 30px
 				cursor: pointer
 
 .footer 
 	.col-12 
-		background-color: #252726
+		background-color: $color5	
 		height: 20%
 		p 
-			text-align: center
 			font-family: $mainfont
 			font-size: 17px
 			color: $mainFontcolor
-			line-height: 22px
+			
 
 @media(min-width: 768px) and (max-width: 1199px), (max-width: 768px) 
 	.slogan 
@@ -433,13 +405,20 @@ input, label
 			margin-bottom: 3%
 
 	.about, .intouch, .social
-		max-width: 100%
 		height: 45vh
 		border-bottom: $border
 		background-color: $mainbgrcolor
-	.media 
-		text-align: left
-		margin-left: 10%
+	.intouch
+		h1
+			width: 66%
+			text-align: center
+		.left
+			max-width: 30%
+			margin-left: 10%
+		.right
+			max-width: 60%
+	.media
+		margin-left: 5%
 
 @media(max-width: 768px)
 	
@@ -473,11 +452,10 @@ input, label
 		img 
 			display: block
 			float: left
+	
 		li 
 			margin-bottom: 2%
-			max-width: 100%
-			display: block
-			border-bottom: $border
+			
 	label 
 		display: block
 	
@@ -485,19 +463,14 @@ input, label
 		display: none
 	
 	#menu-button:checked ~ ul 
-		display: block
+		display: flex
+		flex-direction: column
+		width: 100%
+		align-items: center
 	.benefit-row 
-		h2 
-			font-size: 3vh
-			max-width: 100%
-			display: block	
 		p 
-			width: 100%
-			margin-top: 0
-			margin-bottom: 5%
+			margin-bottom: 10%
 			text-align: justify
-			font-size: 3vh
-		
 	.banner2 
 		display: inline-block
 		margin-top: 10%
@@ -513,34 +486,20 @@ input, label
 			font-size: 3.5vh
 		p 
 			column-count: 1
-			max-width: 95%
-		
+			max-width: 90%
 			text-align: justify
-			margin-right: 5%
-	
+			
 	.about, .intouch, .social 
 		max-width: 100%
 		display: block
 		border-bottom: $border
 		background-color: $mainbgrcolor
 	
-	.about 
-		p 
-			width: 90%
-			margin-left: 10%
-			margin-bottom: 5%
 	.intouch 
-		h1 
-			margin-left: 10%
 		p 
-			width: 90%
-			margin-left: 4%
-			margin-bottom: 5%
-	
+			max-width: 90%
 	.media 
-		width: 100%
 		margin-bottom: 5%
-	
 	.foot-up
 		h1
 			&:after 

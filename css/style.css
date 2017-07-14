@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,900");
 body {
   margin: 0 auto;
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  max-width: 1600px; }
 
 .row:before,
 .row:after {
@@ -35,9 +36,9 @@ header {
       text-decoration: none;
       text-transform: uppercase; }
       header nav ul a:hover {
-        color: #01cee1; }
+        color: #09c2ee; }
 
-input[type="checkbox"] + label {
+label {
   font-size: 25px;
   cursor: pointer;
   color: #fff; }
@@ -48,12 +49,9 @@ input, label {
 .hero {
   background-image: url(https://images.pexels.com/photos/38892/pexels-photo-38892.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
   max-height: 60vh;
-  margin: 0 auto;
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
-  position: relative;
-  overflow: hidden; }
+  background-repeat: no-repeat; }
   .hero .slogan {
     background-color: rgba(0, 0, 0, 0.5);
     float: right;
@@ -115,30 +113,23 @@ input, label {
   position: relative; }
 
 .benefit-row {
-  margin: 50px auto; }
+  margin: 10% auto 5%;
+  max-width: 90%; }
   .benefit-row .item {
-    box-sizing: border-box;
-    float: left;
-    min-height: 1px;
-    margin: auto;
-    text-align: center;
-    padding: 1%; }
+    box-sizing: border-box; }
     .benefit-row .item:hover .icon-btn {
-      background-color: #01cee1;
+      background-color: #09c2ee;
       cursor: pointer;
       transition: ease-in-out 0.3s; }
     .benefit-row .item:hover h2 {
-      color: #01cee1;
+      color: #09c2ee;
       cursor: pointer; }
     .benefit-row .item .icon-btn {
       height: 100px;
       width: 100px;
       border-width: 0;
       border-radius: 15%;
-      margin: 0;
       font-size: 50px;
-      line-height: 100px;
-      text-align: center;
       color: #fff;
       background-color: #313332; }
     .benefit-row .item h2 {
@@ -150,7 +141,7 @@ input, label {
 
 .header2 .col-12 {
   text-align: center;
-  margin: 3% auto; }
+  margin: 0 auto 5%; }
 .header2 h3 {
   color: #313332;
   font-size: 7vh;
@@ -159,9 +150,7 @@ input, label {
 .header2 p {
   color: rgba(0, 0, 0, 0.6);
   font-size: 3.4vh;
-  margin-left: 20%;
-  margin-right: 20%;
-  text-align: center; }
+  margin: 0 20%; }
 
 .gallery {
   max-height: 60vh; }
@@ -175,7 +164,6 @@ input, label {
     line-height: 30vh;
     width: 100%;
     display: block;
-    margin: 0;
     opacity: 0; }
     .gallery .layer:hover {
       opacity: 1;
@@ -186,7 +174,6 @@ input, label {
     font-size: 20px;
     background-color: #fff;
     line-height: 30px;
-    text-align: center;
     border-radius: 15%; }
 
 .team {
@@ -195,8 +182,7 @@ input, label {
   margin: 4% auto; }
   .team img {
     border-radius: 50%;
-    text-align: center;
-    margin-top: 10%; }
+    margin: 10% 0 0; }
   .team p {
     color: #5e5e5c;
     text-align: center;
@@ -211,7 +197,6 @@ input, label {
     margin-left: 13%;
     margin-top: 10%;
     color: #5e5e5c;
-    text-align: center;
     font-size: 18px;
     border-radius: 50%;
     opacity: 0; }
@@ -248,25 +233,18 @@ input, label {
     margin-top: 2%; }
 
 .statistic {
-  -margin-left: auto;
-  -margin-right: auto;
   height: 14vh;
   width: 70%;
-  margin-top: 3%;
-  margin-bottom: 8%; }
+  margin: 3% auto 8%; }
   .statistic h1 {
-    -margin-left: auto;
-    -margin-right: auto;
+    margin: 10% auto;
     font-size: 50px;
     font-family: "Raleway", sans-serif;
-    margin-bottom: 1%;
-    text-align: center;
-    color: #323433;
+    color: #313332;
     font-weight: 900; }
   .statistic p {
     text-transform: uppercase;
     color: #09c2ee;
-    text-align: center;
     font-size: 17px;
     margin-top: 10%;
     font-family: "Raleway", sans-serif;
@@ -282,78 +260,60 @@ input, label {
     text-transform: uppercase;
     font-size: 20px;
     font-weight: 900;
-    width: 60%;
-    margin-top: 5%; }
+    margin: 5%;
+    text-align: left; }
     .foot-up h1:after {
       content: "";
       display: inline-block;
       background: white;
       width: 80px;
       height: 2px;
-      margin: 5px;
-      margin-left: 10px; }
+      margin: 5px 5px 5px 10px; }
   .foot-up p {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
-    text-align: left; }
-  .foot-up .about h1 {
-    margin-left: auto;
-    margin-right: auto;
     text-align: left;
-    width: 80; }
+    font-size: 15px; }
+  .foot-up .about h1 {
+    margin-left: 10%; }
   .foot-up .about p {
     width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    font-size: 15px; }
-  .foot-up .intouch .row {
-    display: inline-block; }
+    margin: 0 auto 3%; }
   .foot-up .intouch h1 {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    width: 80%; }
-  .foot-up .intouch p {
-    width: 85%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0;
-    font-size: 15px; }
+    margin-left: 9%; }
+  .foot-up .intouch .row {
+    display: inline-block;
+    margin: 0 auto 5%; }
+    .foot-up .intouch .row .left p {
+      margin: 0 auto 13%; }
+    .foot-up .intouch .row .right p {
+      margin: 0 auto 5%;
+      line-height: 20px; }
   .foot-up .social h1 {
-    margin-right: auto;
-    margin-left: auto;
-    text-align: left;
+    margin: 5% auto;
     width: 80%; }
   .foot-up .social p {
     width: 70%;
     margin-top: 4%;
-    margin-right: 60%;
-    text-align: left;
-    font-size: 15px;
     margin-left: 10%; }
   .foot-up .social .media {
-    margin-right: 38%; }
+    margin-right: 36%; }
     .foot-up .social .media i {
-      background-color: #00c7e8;
+      background-color: #09c2ee;
       color: #fff;
       font-size: 18px;
-      text-align: center;
-      width: 22px;
-      height: 22px;
-      padding: 3px;
-      margin-top: 3px;
+      line-height: 30px;
+      width: 30px;
+      height: 30px;
       cursor: pointer; }
 
 .footer .col-12 {
   background-color: #252726;
   height: 20%; }
   .footer .col-12 p {
-    text-align: center;
     font-family: "Open Sans", sans-serif;
     font-size: 17px;
-    color: #fff;
-    line-height: 22px; }
+    color: #fff; }
 
 @media(min-width: 768px) and (max-width: 1199px), (max-width: 768px) {
   .slogan h1 {
@@ -439,14 +399,21 @@ input, label {
       margin-bottom: 3%; }
 
   .about, .intouch, .social {
-    max-width: 100%;
     height: 45vh;
     border-bottom: 1px solid #fff;
     background-color: #313332; }
 
+  .intouch h1 {
+    width: 66%;
+    text-align: center; }
+  .intouch .left {
+    max-width: 30%;
+    margin-left: 10%; }
+  .intouch .right {
+    max-width: 60%; }
+
   .media {
-    text-align: left;
-    margin-left: 10%; } }
+    margin-left: 5%; } }
 @media(max-width: 768px) {
   .col-s-1 {
     width: 8.33%; }
@@ -490,10 +457,7 @@ input, label {
       display: block;
       float: left; }
     nav li {
-      margin-bottom: 2%;
-      max-width: 100%;
-      display: block;
-      border-bottom: 1px solid #fff; }
+      margin-bottom: 2%; }
 
   label {
     display: block; }
@@ -502,18 +466,14 @@ input, label {
     display: none; }
 
   #menu-button:checked ~ ul {
-    display: block; }
-
-  .benefit-row h2 {
-    font-size: 3vh;
-    max-width: 100%;
-    display: block; }
-  .benefit-row p {
+    display: flex;
+    flex-direction: column;
     width: 100%;
-    margin-top: 0;
-    margin-bottom: 5%;
-    text-align: justify;
-    font-size: 3vh; }
+    align-items: center; }
+
+  .benefit-row p {
+    margin-bottom: 10%;
+    text-align: justify; }
 
   .banner2 {
     display: inline-block;
@@ -530,9 +490,8 @@ input, label {
       font-size: 3.5vh; }
     .banner2 p {
       column-count: 1;
-      max-width: 95%;
-      text-align: justify;
-      margin-right: 5%; }
+      max-width: 90%;
+      text-align: justify; }
 
   .about, .intouch, .social {
     max-width: 100%;
@@ -540,23 +499,11 @@ input, label {
     border-bottom: 1px solid #fff;
     background-color: #313332; }
 
-  .about p {
-    width: 90%;
-    margin-left: 10%;
-    margin-bottom: 5%; }
-
-  .intouch h1 {
-    margin-left: 10%; }
   .intouch p {
-    width: 90%;
-    margin-left: 4%;
-    margin-bottom: 5%; }
+    max-width: 90%; }
 
   .media {
-    width: 100%;
     margin-bottom: 5%; }
 
   .foot-up h1:after {
     display: none; } }
-
-/*# sourceMappingURL=output.css.map */
